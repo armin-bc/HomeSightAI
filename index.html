@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HomeSight AI | Real Estate Valuation</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="styles/variables.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/animations.css">
+        <link rel="stylesheet" href="styles/utilities.css">
+        <link rel="stylesheet" href="styles/spacing-fixes.css">
+    </head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="fas fa-home"></i>
+                <span>HomeSight AI</span>
+            </a>
+            
+            <nav>
+                <ul>
+                    <li><a href="#features" class="nav-link" data-lang="de">Features</a><a href="#features" class="nav-link" data-lang="en" style="display:none;">Features</a></li>
+                    <li><a href="#process" class="nav-link" data-lang="de">Prozess</a><a href="#process" class="nav-link" data-lang="en" style="display:none;">Process</a></li>
+                    <li><a href="#preise" class="nav-link" data-lang="de">Preise</a><a href="#preise" class="nav-link" data-lang="en" style="display:none;">Pricing</a></li>
+                    <li><a href="#valuation" class="nav-link" data-lang="de">Bewertung</a><a href="#valuation" class="nav-link" data-lang="en" style="display:none;">Valuation</a></li>
+                    <li><a href="#contact" class="nav-link" data-lang="de">Kontakt</a><a href="#contact" class="nav-link" data-lang="en" style="display:none;">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="toggle-container">
+                <div class="toggle-item">
+                    <label class="switch">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider"></span>
+                    </label>
+                    <span class="toggle-label" data-lang="de">Dark</span>
+                    <span class="toggle-label" data-lang="en" style="display:none;">Dark</span>
+                </div>
+                
+                <div class="toggle-item">
+                    <label class="switch">
+                        <input type="checkbox" id="lang-toggle">
+                        <span class="slider"></span>
+                    </label>
+                    <span class="toggle-label">EN</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Features Section HTML -->
+    <section class="features-section" id="features">
+        <div class="container">
+        <!-- Section Header -->
+        <p class="text-primary text-center font-bold text-sm" data-lang="de">INNOVATIVE FUNKTIONEN</p>
+        <p class="text-primary text-center font-bold text-sm" data-lang="en" style="display:none;">INNOVATIVE FEATURES</p>
+        
+        <h2 class="features-heading text-center" data-lang="de">Unsere Features</h2>
+        <h2 class="features-heading text-center" data-lang="en" style="display:none;">Our Features</h2>
+        
+        <p class="features-description text-center" data-lang="de">
+            HomeSight AI revolutioniert die Immobilienbewertung durch fortschrittliche KI-Technologie, die Zeit spart und präzise Ergebnisse liefert.
+        </p>
+        <p class="features-description text-center" data-lang="en" style="display:none;">
+            HomeSight AI revolutionizes property valuation with advanced AI technology that saves time and delivers precise results.
+        </p>
+        
+        <!-- Feature Cards - Top Row -->
+        <div class="features-grid">
+            <!-- Feature 1 -->
+            <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-robot"></i>
+            </div>
+            <h3 data-lang="de">KI-gestützte Bewertung</h3>
+            <h3 data-lang="en" style="display:none;">AI-powered Valuation</h3>
+            <p data-lang="de">Erhalten Sie eine präzise Immobilienbewertung basierend auf Millionen von Vergleichsdaten und lokalen Markttrends.</p>
+            <p data-lang="en" style="display:none;">Get precise property valuations based on millions of comparable data points and local market trends.</p>
+            </div>
+            
+            <!-- Feature 2 -->
+            <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-chart-line"></i>
+            </div>
+            <h3 data-lang="de">Detaillierte Marktanalyse</h3>
+            <h3 data-lang="en" style="display:none;">Detailed Market Analysis</h3>
+            <p data-lang="de">Umfassende Analysen der Preisentwicklung, Marktdynamik und Zukunftsprognosen für Ihre Region.</p>
+            <p data-lang="en" style="display:none;">Comprehensive analyses of price trends, market dynamics, and future projections for your region.</p>
+            </div>
+            
+            <!-- Feature 3 -->
+            <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-file-alt"></i>
+            </div>
+            <h3 data-lang="de">Exposé-Analyse</h3>
+            <h3 data-lang="en" style="display:none;">Listing Analysis</h3>
+            <p data-lang="de">Laden Sie Immobilienexposés hoch und lassen Sie unsere KI die relevanten Daten automatisch extrahieren und analysieren.</p>
+            <p data-lang="en" style="display:none;">Upload property listings and let our AI automatically extract and analyze the relevant data.</p>
+            </div>
+            
+            <!-- Feature 4 -->
+            <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3 data-lang="de">Standortbewertung</h3>
+            <h3 data-lang="en" style="display:none;">Location Assessment</h3>
+            <p data-lang="de">Detaillierte Analyse der Lage inklusive Infrastruktur, Verkehrsanbindung und Zukunftsperspektiven.</p>
+            <p data-lang="en" style="display:none;">Detailed analysis of the location including infrastructure, transport connections, and future prospects.</p>
+            </div>
+            
+            <!-- Feature 5 -->
+            <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3 data-lang="de">Mobile Nutzung</h3>
+            <h3 data-lang="en" style="display:none;">Mobile Access</h3>
+            <p data-lang="de">Nutzen Sie HomeSight AI unterwegs bei Besichtigungen für sofortige Einschätzungen und Vergleiche.</p>
+            <p data-lang="en" style="display:none;">Use HomeSight AI on the go during property viewings for immediate assessments and comparisons.</p>
+            </div>
+            
+            <!-- Feature 6 -->
+            <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-search-dollar"></i>
+            </div>
+            <h3 data-lang="de">Versteckte Potenziale</h3>
+            <h3 data-lang="en" style="display:none;">Hidden Potential</h3>
+            <p data-lang="de">Unsere KI erkennt Wertsteigerungspotenziale und mögliche Risiken, die auf den ersten Blick nicht sichtbar sind.</p>
+            <p data-lang="en" style="display:none;">Our AI identifies value appreciation potential and possible risks that aren't visible at first glance.</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Process Form Section -->
+    <section class="process-section" id="process">
+        <div class="container">
+          <p class="text-primary text-center font-bold text-sm" data-lang="de">EINFACHER PROZESS</p>
+          <p class="text-primary text-center font-bold text-sm" data-lang="en" style="display:none;">SIMPLE PROCESS</p>
+      
+          <h2 class="text-center text-2xl font-bold mt-2" data-lang="de">So funktioniert's</h2>
+          <h2 class="text-center text-2xl font-bold mt-2" data-lang="en" style="display:none;">How it works</h2>
+      
+          <p class="text-center text-secondary mt-2" data-lang="de">
+            HomeSight AI bietet einen einfachen, intuitiven Prozess, um präzise Immobilienbewertungen in wenigen Minuten zu erhalten.
+          </p>
+          <p class="text-center text-secondary mt-2" data-lang="en" style="display:none;">
+            HomeSight AI offers a simple, intuitive process to get accurate property valuations in just minutes.
+          </p>
+      
+          <div class="process-grid mt-5">
+            <!-- Step 1 -->
+            <div class="process-card">
+              <div class="step-number">1</div>
+              <h4 data-lang="de">Daten eingeben</h4>
+              <h4 data-lang="en" style="display:none;">Enter Data</h4>
+              <p data-lang="de">Geben Sie grundlegende Informationen zu Ihrer Immobilie ein oder laden Sie vorhandene Dokumente hoch.</p>
+              <p data-lang="en" style="display:none;">Enter basic property details or upload available documents.</p>
+            </div>
+      
+            <!-- Step 2 -->
+            <div class="process-card">
+              <div class="step-number">2</div>
+              <h4 data-lang="de">KI-Analyse</h4>
+              <h4 data-lang="en" style="display:none;">AI Analysis</h4>
+              <p data-lang="de">Unsere KI analysiert Ihre Daten und vergleicht sie mit Millionen von Marktdaten und ähnlichen Immobilien.</p>
+              <p data-lang="en" style="display:none;">Our AI analyzes your data and compares it with millions of market entries and similar properties.</p>
+            </div>
+      
+            <!-- Step 3 -->
+            <div class="process-card">
+              <div class="step-number">3</div>
+              <h4 data-lang="de">Bewertungsergebnis</h4>
+              <h4 data-lang="en" style="display:none;">Valuation Result</h4>
+              <p data-lang="de">Erhalten Sie eine detaillierte Bewertung mit Preisschätzung, Vergleichsdaten und Marktanalyse.</p>
+              <p data-lang="en" style="display:none;">Receive a detailed valuation with price estimate, comps, and market analysis.</p>
+            </div>
+      
+            <!-- Step 4 -->
+            <div class="process-card">
+              <div class="step-number">4</div>
+              <h4 data-lang="de">Fundierte Entscheidung</h4>
+              <h4 data-lang="en" style="display:none;">Informed Decision</h4>
+              <p data-lang="de">Nutzen Sie die Ergebnisse für fundierte Kauf- oder Verkaufsentscheidungen.</p>
+              <p data-lang="en" style="display:none;">Use the insights to make informed buying or selling decisions.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+    <!-- Pricing Section to add to your main page -->
+<section class="pricing-section" id="preise">
+    <div class="container">
+      <!-- Section Header -->
+      <p class="text-primary text-center font-bold text-sm" data-lang="de">MASSGESCHNEIDERTE LÖSUNGEN</p>
+      <p class="text-primary text-center font-bold text-sm" data-lang="en" style="display:none;">TAILORED SOLUTIONS</p>
+      
+      <h2 class="section-heading text-center" data-lang="de">Bewertungsoptionen</h2>
+      <h2 class="section-heading text-center" data-lang="en" style="display:none;">Valuation Options</h2>
+      
+      <p class="section-description text-center" data-lang="de">
+        Wählen Sie die passende Bewertungsoption für Ihre individuellen Bedürfnisse.
+      </p>
+      <p class="section-description text-center" data-lang="en" style="display:none;">
+        Choose the right valuation option for your individual needs.
+      </p>
+      
+      <div class="pricing-grid">
+        <!-- Starter Plan -->
+        <div class="pricing-card">
+          <div class="price-header starter" data-lang="de">EINSTIEG</div>
+          <div class="price-header starter" data-lang="en" style="display:none;">STARTER</div>
+          
+          <div class="price-content">
+            <div class="price-icon">
+              <i class="fas fa-search"></i>
+            </div>
+            
+            <h3 class="price-title" data-lang="de">Standard</h3>
+            <h3 class="price-title" data-lang="en" style="display:none;">Standard</h3>
+            
+            <p class="price-description" data-lang="de">
+              Schnelle Basisanalyse für einen ersten Überblick über den Immobilienwert.
+            </p>
+            <p class="price-description" data-lang="en" style="display:none;">
+              Quick basic analysis for an initial overview of the property value.
+            </p>
+            
+            <ul class="price-features">
+              <li>
+                <i class="fas fa-check"></i>
+                <span data-lang="de">Grundlegende Marktanalyse</span>
+                <span data-lang="en" style="display:none;">Basic market analysis</span>
+              </li>
+              <li>
+                <i class="fas fa-check"></i>
+                <span data-lang="de">Preisschätzung basierend auf Basisparametern</span>
+                <span data-lang="en" style="display:none;">Price estimation based on basic parameters</span>
+              </li>
+              <li>
+                <i class="fas fa-check"></i>
+                <span data-lang="de">Vergleich mit ähnlichen Objekten</span>
+                <span data-lang="en" style="display:none;">Comparison with similar objects</span>
+              </li>
+              <li>
+                <i class="fas fa-check"></i>
+                <span data-lang="de">Regionale Preistrends</span>
+                <span data-lang="en" style="display:none;">Regional price trends</span>
+              </li>
+            </ul>
+            
+            <a href="#valuation" class="price-btn" data-lang="de">Auswählen</a>
+            <a href="#valuation" class="price-btn" data-lang="en" style="display:none;">Select</a>
+          </div>
+        </div>
+        
+        <!-- Popular Plan -->
+        <div class="pricing-card">
+          <div class="price-header popular" data-lang="de">BELIEBT</div>
+          <div class="price-header popular" data-lang="en" style="display:none;">POPULAR</div>
+          
+          <div class="price-content">
+            <div class="price-icon">
+              <i class="fas fa-list-ul"></i>
+            </div>
+            
+            <h3 class="price-title" data-lang="de">Fortgeschritten</h3>
+            <h3 class="price-title" data-lang="en" style="display:none;">Advanced</h3>
+            
+            <p class="price-description" data-lang="de">
+              Detaillierte Analyse mit umfangreichen Marktdaten und Zukunftsprognosen.
+            </p>
+            <p class="price-description" data-lang="en" style="display:none;">
+              Detailed analysis with comprehensive market data and future forecasts.
+            </p>
+            
+            <ul class="price-features">
+              <li>
+                <i class="fas fa-check"></i>
+                <span data-lang="de">Alles aus Standard-Bewertung</span>
+                <span data-lang="en" style="display:none;">Everything from Standard valuation</span>
+              </li>
+              <li>
+                <i class="fas fa-check"></i>
+                <span data-lang="de">Detaillierte Analyse der Mikrolage</span>
+                <span data-lang="en" style="display:none;">Detailed micro-location analysis</span>
+              </li>
+              <li>
+                <i class="fas fa-check"></i>
+                <span data-lang="de">Berücksichtigung von Infrastruktur und Bausubstanz</span>
+                <span data-lang="en" style="display:none;">Consideration of infrastructure and building condition</span>
+              </li>
+              <li>
+                <i class="fas fa-check"></i>
+                <span data-lang="de">Preisprognose für 5 Jahre</span>
+                <span data-lang="en" style="display:none;">Price forecast for 5 years</span>
+              </li>
+              <li>
+                <i class="fas fa-check"></i>
+                <span data-lang="de">Dokumentenanalyse (Exposé, Energieausweis)</span>
+                <span data-lang="en" style="display:none;">Document analysis (listing, energy certificate)</span>
+              </li>
+            </ul>
+            
+            <a href="#valuation" class="price-btn" data-lang="de">Auswählen</a>
+            <a href="#valuation" class="price-btn" data-lang="en" style="display:none;">Select</a>
+          </div>
+        </div>
+        
+        <!-- Premium Plan -->
+        <div class="pricing-card">
+          <div class="price-header premium" data-lang="de">PREMIUM</div>
+          <div class="price-header premium" data-lang="en" style="display:none;">PREMIUM</div>
+          
+          <div class="price-content">
+            <div class="price-icon">
+              <i class="fas fa-crown"></i>
+            </div>
+            
+            <h3 class="price-title" data-lang="de">Expertenmodus</h3>
+            <h3 class="price-title" data-lang="en" style="display:none;">Expert Mode</h3>
+            
+            <p class="price-description" data-lang="de">
+              Professionelle Bewertung mit individuellen Annahmen und maximaler Präzision.
+            </p>
+            <p class="price-description" data-lang="en" style="display:none;">
+              Professional valuation with individual assumptions and maximum precision.
+            </p>
+            
+            <ul class="price-features">
+              <li>
+                <i class="fas fa-check"></i>
+                <span data-lang="de">Alles aus Fortgeschrittener Bewertung</span>
+                <span data-lang="en" style="display:none;">Everything from Advanced valuation</span>
+              </li>
+              <li>
+                <i class="fas fa-check"></i>
+                <span data-lang="de">Individuelle Anpassung der Bewertungsparameter</span>
+                <span data-lang="en" style="display:none;">Individual adjustment of valuation parameters</span>
+              </li>
+              <li>
+                <i class="fas fa-check"></i>
+                <span data-lang="de">Simulation verschiedener Marktszenarien</span>
+                <span data-lang="en" style="display:none;">Simulation of different market scenarios</span>
+              </li>
+              <li>
+                <i class="fas fa-check"></i>
+                <span data-lang="de">Bewertung von Umbau- und Sanierungspotenzialen</span>
+                <span data-lang="en" style="display:none;">Evaluation of renovation and remodeling potential</span>
+              </li>
+              <li>
+                <i class="fas fa-check"></i>
+                <span data-lang="de">Detaillierte Investment-Analyse</span>
+                <span data-lang="en" style="display:none;">Detailed investment analysis</span>
+              </li>
+              <li>
+                <i class="fas fa-check"></i>
+                <span data-lang="de">Priorisierte KI-Verarbeitung</span>
+                <span data-lang="en" style="display:none;">Prioritized AI processing</span>
+              </li>
+            </ul>
+            
+            <a href="#valuation" class="price-btn" data-lang="de">Auswählen</a>
+            <a href="#valuation" class="price-btn" data-lang="en" style="display:none;">Select</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Valuation Form Section -->
+    <section class="valuation" id="valuation">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-lang="de">Immobilienbewertung</h2>
+                <h2 data-lang="en" style="display:none;">Property Valuation</h2>
+                <p data-lang="de">Füllen Sie das Formular aus, um Ihre kostenlose Immobilienbewertung zu erhalten</p>
+                <p data-lang="en" style="display:none;">Fill out the form to get your free property valuation</p>
+            </div>
+            
+            <div class="form-container">
+                <div class="form-steps">
+                    <div class="step-indicator active" data-step="1">
+                        <div class="step-dot"></div>
+                        <div class="step-label" data-lang="de">Immobilientyp</div>
+                        <div class="step-label" data-lang="en" style="display:none;">Property Type</div>
+                    </div>
+                    
+                    <div class="step-indicator" data-step="2">
+                        <div class="step-dot"></div>
+                        <div class="step-label" data-lang="de">Details</div>
+                        <div class="step-label" data-lang="en" style="display:none;">Details</div>
+                    </div>
+                    
+                    <div class="step-indicator" data-step="3">
+                        <div class="step-dot"></div>
+                        <div class="step-label" data-lang="de">Dokumente</div>
+                        <div class="step-label" data-lang="en" style="display:none;">Documents</div>
+                    </div>
+                    
+                    <div class="step-indicator" data-step="4">
+                        <div class="step-dot"></div>
+                        <div class="step-label" data-lang="de">Kontakt</div>
+                        <div class="step-label" data-lang="en" style="display:none;">Contact</div>
+                    </div>
+                </div>
+                
+                <form id="valuation-form">
+                    <!-- Step 1: Property Type -->
+                    <div class="form-step active" data-step="1">
+                        <div class="form-group">
+                            <label data-lang="de">Wählen Sie den Immobilientyp</label>
+                            <label data-lang="en" style="display:none;">Select Property Type</label>
+                            
+                            <div class="radio-group">
+                                <label class="radio-card">
+                                    <input type="radio" name="property_type" value="apartment" checked>
+                                    <div class="radio-content">
+                                        <i class="fas fa-building"></i>
+                                        <span data-lang="de">Wohnung</span>
+                                        <span data-lang="en" style="display:none;">Apartment</span>
+                                        <div class="check-icon"><i class="fas fa-check"></i></div>
+                                    </div>
+                                </label>
+                                
+                                <label class="radio-card">
+                                    <input type="radio" name="property_type" value="house">
+                                    <div class="radio-content">
+                                        <i class="fas fa-home"></i>
+                                        <span data-lang="de">Haus</span>
+                                        <span data-lang="en" style="display:none;">House</span>
+                                        <div class="check-icon"><i class="fas fa-check"></i></div>
+                                    </div>
+                                </label>
+                                
+                                <label class="radio-card">
+                                    <input type="radio" name="property_type" value="commercial">
+                                    <div class="radio-content">
+                                        <i class="fas fa-store"></i>
+                                        <span data-lang="de">Gewerbe</span>
+                                        <span data-lang="en" style="display:none;">Commercial</span>
+                                        <div class="check-icon"><i class="fas fa-check"></i></div>
+                                    </div>
+                                </label>
+                                
+                                <label class="radio-card">
+                                    <input type="radio" name="property_type" value="land">
+                                    <div class="radio-content">
+                                        <i class="fas fa-tree"></i>
+                                        <span data-lang="de">Grundstück</span>
+                                        <span data-lang="en" style="display:none;">Land</span>
+                                        <div class="check-icon"><i class="fas fa-check"></i></div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-buttons">
+                            <div></div>
+                            <button type="button" class="btn btn-primary next-step" data-next="2" data-lang="de">Weiter</button>
+                            <button type="button" class="btn btn-primary next-step" data-next="2" data-lang="en" style="display:none;">Next</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2: Property Details -->
+                    <div class="form-step" data-step="2">
+                        <div class="form-group">
+                            <label for="rooms" data-lang="de">Anzahl der Zimmer</label>
+                            <label for="rooms" data-lang="en" style="display:none;">Number of Rooms</label>
+                            <div class="input-container">
+                                <i class="fas fa-door-open"></i>
+                                <input type="number" id="rooms" class="form-control" placeholder="z.B. 3" min="1" max="20" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="area" data-lang="de">Wohnfläche (m²)</label>
+                            <label for="area" data-lang="en" style="display:none;">Living Area (m²)</label>
+                            <div class="input-container">
+                                <i class="fas fa-ruler-combined"></i>
+                                <input type="number" id="area" class="form-control" placeholder="z.B. 80" min="1" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="location" data-lang="de">Standort</label>
+                            <label for="location" data-lang="en" style="display:none;">Location</label>
+                            <div class="input-container">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <input type="text" id="location" class="form-control" placeholder="Stadt, PLZ oder Adresse" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-buttons">
+                            <button type="button" class="btn btn-secondary prev-step" data-prev="1" data-lang="de">Zurück</button>
+                            <button type="button" class="btn btn-secondary prev-step" data-prev="1" data-lang="en" style="display:none;">Back</button>
+                            <button type="button" class="btn btn-primary next-step" data-next="3" data-lang="de">Weiter</button>
+                            <button type="button" class="btn btn-primary next-step" data-next="3" data-lang="en" style="display:none;">Next</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3: Documents -->
+                    <div class="form-step" data-step="3">
+                        <div class="form-group">
+                            <label data-lang="de">Fotos oder Dokumente hochladen (optional)</label>
+                            <label data-lang="en" style="display:none;">Upload Photos or Documents (optional)</label>
+                            <div class="dropzone" id="file-dropzone">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <p data-lang="de">Dateien hierher ziehen oder klicken zum Auswählen</p>
+                                <p data-lang="en" style="display:none;">Drag files here or click to select</p>
+                                <input type="file" id="file-input" multiple style="display: none;">
+                            </div>
+                        </div>
+                        
+                        <div class="form-buttons">
+                            <button type="button" class="btn btn-secondary prev-step" data-prev="2" data-lang="de">Zurück</button>
+                            <button type="button" class="btn btn-secondary prev-step" data-prev="2" data-lang="en" style="display:none;">Back</button>
+                            <button type="button" class="btn btn-primary next-step" data-next="4" data-lang="de">Weiter</button>
+                            <button type="button" class="btn btn-primary next-step" data-next="4" data-lang="en" style="display:none;">Next</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 4: Contact Information -->
+                    <div class="form-step" data-step="4">
+                        <div class="form-group">
+                            <label for="name" data-lang="de">Name</label>
+                            <label for="name" data-lang="en" style="display:none;">Name</label>
+                            <div class="input-container">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="name" class="form-control" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" data-lang="de">E-Mail</label>
+                            <label for="email" data-lang="en" style="display:none;">Email</label>
+                            <div class="input-container">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-buttons">
+                            <button type="button" class="btn btn-secondary prev-step" data-prev="3" data-lang="de">Zurück</button>
+                            <button type="button" class="btn btn-secondary prev-step" data-prev="3" data-lang="en" style="display:none;">Back</button>
+                            <button type="submit" class="btn btn-primary" id="submit-form" data-lang="de">Bewertung starten</button>
+                            <button type="submit" class="btn btn-primary" id="submit-form" data-lang="en" style="display:none;">Start Valuation</button>
+                        </div>
+                    </div>
+                </form>
+                
+                <!-- Loading Spinner -->
+                <div class="loading-spinner" id="loading-spinner">
+                    <div class="spinner"></div>
+                    <p class="loading-text" data-lang="de">Ihre Immobilie wird bewertet...</p>
+                    <p class="loading-text" data-lang="en" style="display:none;">Your property is being evaluated...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+      
+    <!-- Testimonial Section -->
+    <section id="testimonial-section" class="testimonial-section">
+        <div class="container">
+            <div class="testimonial-header">
+                <h2>Loved by real estate professionals</h2>
+                <p>Experts around the world choose HomeSight AI for property valuation.</p>
+            </div>
+            
+            <div id="testimonial-grid">
+                <!-- Testimonials will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+          <div class="section-header text-center">
+            <p class="text-primary font-bold text-sm" data-lang="de">SUPPORT</p>
+            <p class="text-primary font-bold text-sm" data-lang="en" style="display:none;">SUPPORT</p>
+            <h2 class="text-xl font-bold mt-2" data-lang="de">Kontaktieren Sie uns</h2>
+            <h2 class="text-xl font-bold mt-2" data-lang="en" style="display:none;">Contact Us</h2>
+            <p class="text-secondary mt-2" data-lang="de">Haben Sie Fragen zu HomeSight AI? Unser Team steht Ihnen gerne zur Verfügung.</p>
+            <p class="text-secondary mt-2" data-lang="en" style="display:none;">Have questions about HomeSight AI? Our team is happy to help.</p>
+          </div>
+      
+          <div class="contact-grid">
+            <!-- Left: Form -->
+            <form class="contact-form">
+              <div class="form-group">
+                <label for="name" data-lang="de">Name</label>
+                <label for="name" data-lang="en" style="display:none;">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Max Mustermann" />
+              </div>
+      
+              <div class="form-group">
+                <label for="email" data-lang="de">E-Mail</label>
+                <label for="email" data-lang="en" style="display:none;">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="max@example.com" />
+              </div>
+      
+              <div class="form-group">
+                <label for="subject" data-lang="de">Betreff</label>
+                <label for="subject" data-lang="en" style="display:none;">Subject</label>
+                <input type="text" class="form-control" id="subject" placeholder="Ihre Anfrage" />
+              </div>
+      
+              <div class="form-group">
+                <label for="message" data-lang="de">Nachricht</label>
+                <label for="message" data-lang="en" style="display:none;">Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Wie können wir helfen?"></textarea>
+              </div>
+      
+              <button type="submit" class="btn btn-gradient" data-lang="de">Anfrage senden</button>
+              <button type="submit" class="btn btn-gradient" data-lang="en" style="display:none;">Send Request</button>
+            </form>
+      
+            <!-- Right: Info -->
+            <div class="contact-info-block">
+              <div class="info-group">
+                <i class="fas fa-map-marker-alt info-icon"></i>
+                <div>
+                  <h4 data-lang="de">Besuchen Sie uns</h4>
+                  <h4 data-lang="en" style="display:none;">Visit Us</h4>
+                  <p>Innovationspark 6<br>Digitale Straße 16<br>80331 München</p>
+                </div>
+              </div>
+      
+              <div class="info-group">
+                <i class="fas fa-envelope info-icon"></i>
+                <div>
+                  <h4 data-lang="de">Kontaktieren Sie uns</h4>
+                  <h4 data-lang="en" style="display:none;">Contact Us</h4>
+                  <p>Email: info@homesightai.com<br>Phone: +49 (0) 89 12345678</p>
+                </div>
+              </div>
+      
+              <div class="info-group">
+                <i class="fas fa-clock info-icon"></i>
+                <div>
+                  <h4 data-lang="de">Geschäftszeiten</h4>
+                  <h4 data-lang="en" style="display:none;">Business Hours</h4>
+                  <p data-lang="de">Mo–Fr: 9:00 – 18:00 Uhr<br>Sa–So: Geschlossen</p>
+                  <p data-lang="en" style="display:none;">Mon–Fri: 9 AM – 6 PM<br>Sat–Sun: Closed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+    
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Company Info Column -->
+                <div class="footer-column">
+                    <a href="#" class="footer-logo">
+                        <i class="fas fa-home"></i>
+                        <span>HomeSight AI</span>
+                    </a>
+                    <p class="footer-description" data-lang="de">HomeSight AI revolutioniert die Immobilienbewertung durch KI-gestützte Technologie, die präzise Ergebnisse und fundierte Entscheidungsgrundlagen liefert.</p>
+                    <p class="footer-description" data-lang="en" style="display:none;">HomeSight AI revolutionizes real estate valuation through AI-powered technology, delivering precise results and sound decision-making foundations.</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/HomeSightAI" target="_blank" aria-label="Facebook">
+                          <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/HomeSightAI" target="_blank" aria-label="Twitter">
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://linkedin.com/company/homesight-ai" target="_blank" aria-label="LinkedIn">
+                          <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://instagram.com/homesightai" target="_blank" aria-label="Instagram">
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                      </div>
+                </div>
+                
+                <!-- Product Column -->
+                <div class="footer-column">
+                    <h3 data-lang="de">Produkt</h3>
+                    <h3 data-lang="en" style="display:none;">Product</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-lang="de">Features</a><a href="#" data-lang="en" style="display:none;">Features</a></li>
+                        <li><a href="#" data-lang="de">Funktionsweise</a><a href="#" data-lang="en" style="display:none;">How it Works</a></li>
+                        <li><a href="#" data-lang="de">Preise</a><a href="#" data-lang="en" style="display:none;">Pricing</a></li>
+                        <li><a href="#" data-lang="de">FAQ</a><a href="#" data-lang="en" style="display:none;">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Company Column -->
+                <div class="footer-column">
+                    <h3 data-lang="de">Unternehmen</h3>
+                    <h3 data-lang="en" style="display:none;">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-lang="de">Über uns</a><a href="#" data-lang="en" style="display:none;">About Us</a></li>
+                        <li><a href="#" data-lang="de">Team</a><a href="#" data-lang="en" style="display:none;">Team</a></li>
+                        <li><a href="#" data-lang="de">Karriere</a><a href="#" data-lang="en" style="display:none;">Careers</a></li>
+                        <li><a href="#" data-lang="de">Blog</a><a href="#" data-lang="en" style="display:none;">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Resources Column -->
+                <div class="footer-column">
+                    <h3 data-lang="de">Ressourcen</h3>
+                    <h3 data-lang="en" style="display:none;">Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-lang="de">Dokumentation</a><a href="#" data-lang="en" style="display:none;">Documentation</a></li>
+                        <li><a href="#" data-lang="de">Support</a><a href="#" data-lang="en" style="display:none;">Support</a></li>
+                        <li><a href="#" data-lang="de">Webinare</a><a href="#" data-lang="en" style="display:none;">Webinars</a></li>
+                        <li><a href="#" data-lang="de">Leitfäden</a><a href="#" data-lang="en" style="display:none;">Guides</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Legal Column -->
+                <div class="footer-column">
+                    <h3 data-lang="de">Rechtliches</h3>
+                    <h3 data-lang="en" style="display:none;">Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-lang="de">Datenschutz</a><a href="#" data-lang="en" style="display:none;">Privacy Policy</a></li>
+                        <li><a href="#" data-lang="de">AGB</a><a href="#" data-lang="en" style="display:none;">Terms of Service</a></li>
+                        <li><a href="#" data-lang="de">Impressum</a><a href="#" data-lang="en" style="display:none;">Imprint</a></li>
+                        <li><a href="#" data-lang="de">Cookies</a><a href="#" data-lang="en" style="display:none;">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p class="copyright">
+                    <span data-lang="de">© 2025 HomeSight AI. Alle Rechte vorbehalten.</span>
+                    <span data-lang="en" style="display:none;">© 2025 HomeSight AI. All rights reserved.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/themes.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/testimonials.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/parallax.js"></script>
+</body>
+</html>

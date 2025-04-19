@@ -1,0 +1,166 @@
+/* 
+  HomeSight AI - Consolidated Spacing & Footer Fixes
+  Add this to the end of your main.css file 
+*/
+
+/* Header Spacing Fixes */
+header {
+    padding: 16px 0;
+  }
+  
+  .header-container {
+    gap: 20px;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 24px;
+  }
+  
+  .toggle-container {
+    display: flex;
+    gap: 16px;
+  }
+  
+  /* Process Section Spacing */
+  .process-section {
+    padding: 80px 0;
+  }
+  
+  .process-grid {
+    gap: 30px;
+  }
+  
+  .process-card {
+    padding: 28px 24px;
+  }
+  
+  /* Valuation Section Fixes */
+  .valuation {
+    padding: 80px 0;
+  }
+  
+  .form-container {
+    padding: 40px;
+  }
+  
+  .form-steps {
+    margin-bottom: 40px;
+  }
+  
+  .form-group {
+    margin-bottom: 24px;
+  }
+  
+  .radio-group {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  
+  .radio-card {
+    padding: 20px;
+  }
+  
+  /* Testimonial Section Fixes */
+  .testimonial-section {
+    padding: 100px 0;
+  }
+  
+  .testimonial-header {
+    margin-bottom: 60px;
+  }
+  
+  #testimonial-grid {
+    gap: 30px;
+  }
+  
+  /* Contact Section Fixes */
+  .contact {
+    padding: 80px 0;
+  }
+  
+  .contact-grid {
+    gap: 60px;
+  }
+  
+  .info-group {
+    margin-bottom: 32px;
+  }
+  
+  /* Footer Fixes - Complete Solution */
+  .main-footer {
+    padding: 80px 0 40px;
+  }
+  
+  /* Use flexbox for footer instead of grid for better control */
+  .footer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  
+  .footer-column {
+    flex: 1 1 200px;
+    min-width: 160px;
+    margin-bottom: 30px;
+  }
+  
+  /* Fix for the Rechtliches section */
+  .main-footer > .container > h3 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 100%;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 14px;
+  }
+  
+  .footer-bottom {
+    width: 100%;
+    padding-top: 30px;
+    margin-top: 20px;
+    border-top: 1px solid #334155;
+    text-align: center;
+  }
+  
+  /* Responsive fixes - for all sections */
+  @media (max-width: 768px) {
+    .process-grid, 
+    .contact-grid {
+      gap: 40px;
+    }
+  
+    .form-container {
+      padding: 30px 20px;
+    }
+    
+    .testimonial-header h2 {
+      font-size: 2rem;
+    }
+    
+    .footer-grid {
+      flex-direction: column;
+      gap: 30px;
+    }
+    
+    .footer-column {
+      width: 100%;
+      flex: 1 1 100%;
+    }
+    
+    nav {
+      margin-left: auto;
+      margin-right: 20px;
+    }
+  }
